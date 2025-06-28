@@ -1,0 +1,886 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "Arrival era",
+		"techCost": 10,
+		"buildingCost": 40,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Mana is in the Air",
+				"row": 6,
+				"quote": "'Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.' - Daniel Webster",
+				"uniques": ["Starting tech"]
+			}
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "Arrival era",
+		"techCost": 25,
+		"buildingCost": 60,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Sailing",
+				"row": 1,
+				"prerequisites": ["Mana is in the Air"],
+				"quote": "..."
+			},
+			{
+				"name": "Mysticism",
+				"row": 3,
+				"prerequisites": ["Mana is in the Air"],
+				"quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
+			},
+			{
+				"name": "Agriculture",
+				"row": 6,
+				"prerequisites": ["Mana is in the Air"],
+				"quote": "'Thou shalt not muzzle the ox when he treadeth out the corn.' - Bible Deuteronomy 25:4"
+			},
+			{
+				"name": "Prospecting",
+				"row": 9,
+				"prerequisites": ["Mana is in the Air"],
+				"quote": "'The haft of the arrow has been feathered with one of the eagle's own plumes, we often give our enemies the means of our own destruction' - Aesop"
+			},
+		]
+	},
+	{
+		"columnNumber": 2,
+		"era": "Arrival era",
+		"techCost": 50,
+		"buildingCost": 75,
+		"wonderCost": 190,
+		"techs": [
+			{
+				"name": "Sea Fishing",
+				"row": 1,
+				"prerequisites": ["Sailing"],
+				"quote": "..."
+			},
+			{
+				"name": "Writing",
+				"row": 2,
+				"prerequisites": ["Mysticism"],
+				"quote": "..."
+			},
+			{
+				"name": "Thaumaturgy",
+				"row": 4,
+				"prerequisites": ["Mysticism"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Domestication",
+				"row": 6,
+				"prerequisites": ["Agriculture"],
+				"quote": "..."
+			},
+			{
+				"name": "The Wheel",
+				"row": 7,
+				"prerequisites": ["Agriculture"],
+				"quote": "..."
+			},
+			{
+				"name": "Mining",
+				"row": 9,
+				"prerequisites": ["Prospecting"],
+				"quote": "..."
+			},
+			{
+				"name": "Leyline Channeling",
+				"row": 10,
+				"prerequisites": ["Prospecting"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		]
+	},
+	{
+		"columnNumber": 3,
+		"era": "Arrival era",
+		"techCost": 105,
+		"buildingCost": 100,
+		"wonderCost": 250,
+		"techs": [
+			{
+				"name": "Astrology",
+				"row": 2,
+				"prerequisites": ["Writing"],
+				"quote": "..."
+			},
+			{
+				"name": "Precursor Analysis",
+				"row": 3,
+				"prerequisites": ["Writing"],
+				"quote": "..."
+			},
+			{
+				"name": "Mounted Warfare",
+				"row": 6,
+				"prerequisites": ["Domestication", "The Wheel"],
+				"quote": "..."
+			},
+			{
+				"name": "Hydrology",
+				"row": 7,
+				"prerequisites": ["The Wheel"],
+				"quote": "..."
+			},
+			{
+				"name": "Masonry",
+				"row": 8,
+				"prerequisites": ["Mining"],
+				"quote": "..."
+			},
+			{
+				"name": "Bronze Working",
+				"row": 10,
+				"prerequisites": ["Mining"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 4,
+		"era": "Renewal era",
+		"techCost": 185,
+		"buildingCost": 120,
+		"wonderCost": 275,
+		"techs": [
+			{
+				"name": "Star Charts",
+				"row": 1,
+				"prerequisites": ["Sea Fishing", "Astrology"],
+				"quote": "..."
+			},
+			{
+				"name": "Theology",
+				"row": 2,
+				"prerequisites": ["Astrology"],
+				"quote": "..."
+			},
+			{
+				"name": "Element Manipulation",
+				"row": 4,
+				"prerequisites": ["Thaumaturgy"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Coinage",
+				"row": 6,
+				"prerequisites": ["Mounted Warfare"],
+				"quote": "..."
+			},
+			{
+				"name": "Mathematics",
+				"row": 7,
+				"prerequisites": ["Hydrology"],
+				"quote": "..."
+			},
+			{
+				"name": "Craftmanship",
+				"row": 8,
+				"prerequisites": ["Hydrology", "Masonry"],
+				"quote": "..."
+			},
+			{
+				"name": "Mana Crystallization",
+				"row": 9,
+				"prerequisites": ["Mining"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 5,
+		"era": "Renewal era",
+		"techCost": 290,
+		"buildingCost": 130,
+		"wonderCost": 300,
+		"techs": [
+			{
+				"name": "Education",
+				"row": 2,
+				"prerequisites": ["Theology", "Element Manipulation"],
+				"quote": "..."
+			},
+			{
+				"name": "Guilds",
+				"row": 6,
+				"prerequisites": ["Coinage", "Element Manipulation"],
+				"quote": "..."
+			},
+			{
+				"name": "State Workforce",
+				"row": 7,
+				"prerequisites": ["Mathematics", "Coinage"],
+				"quote": "..."
+			},
+			{
+				"name": "Engineering",
+				"row": 8,
+				"prerequisites": ["Craftmanship"],
+				"quote": "..."
+			},
+			{
+				"name": "Iron Working",
+				"row": 10,
+				"prerequisites": ["Bronze Working"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 6,
+		"era": "Renewal era",
+		"techCost": 455,
+		"buildingCost": 160,
+		"wonderCost": 375,
+		"techs": [
+			{
+				"name": "Dry Docks",
+				"row": 1,
+				"prerequisites": ["Star Charts", "Education"],
+				"quote": "..."
+			},
+			{
+				"name": "Divination",
+				"row": 2,
+				"prerequisites": ["Education"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Herbal Medicine",
+				"row": 3,
+				"prerequisites": ["Education"],
+				"quote": "..."
+			},
+			{
+				"name": "Magic Scroll",
+				"row": 4,
+				"prerequisites": ["Education"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Summoning Ritual",
+				"row": 5,
+				"prerequisites": ["Guilds"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Civil Service",
+				"row": 7,
+				"prerequisites": ["State Workforce", "Guilds"],
+				"quote": "..."
+			},
+			{
+				"name": "Runeforging",
+				"row": 9,
+				"prerequisites": ["Engineering", "Iron Working", "Mana Crystallization"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 7,
+		"era": "Arcane era",
+		"techCost": 750,
+		"buildingCost": 220,
+		"wonderCost": 475,
+		"techs": [
+			{
+				"name": "Astrolabes",
+				"row": 1,
+				"prerequisites": ["Dry Docks", "Divination"],
+				"quote": "..."
+			},
+			{
+				"name": "Healing Arts",
+				"row": 3,
+				"prerequisites": ["Herbal Medicine", "Magic Scroll"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Arcane Studies",
+				"row": 4,
+				"prerequisites": ["Magic Scroll"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Magical Combat",
+				"row": 6,
+				"prerequisites": ["Magic Scroll", "Guilds"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Physics",
+				"row": 8,
+				"prerequisites": ["Engineering"],
+				"quote": "..."
+			},
+			{
+				"name": "Machinery",
+				"row": 9,
+				"prerequisites": ["Runeforging"],
+				"quote": "..."
+			},
+			{
+				"name": "Blast Furnace",
+				"row": 10,
+				"prerequisites": ["Runeforging"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 8,
+		"era": "Arcane era",
+		"techCost": 1020,
+		"buildingCost": 260,
+		"wonderCost": 550,
+		"techs": [
+			{
+				"name": "Stellarography",
+				"row": 1,
+				"prerequisites": ["Astrolabes"],
+				"quote": "..."
+			},
+			{
+				"name": "Scrying Technique",
+				"row": 2,
+				"prerequisites": ["Divination"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Acoustics",
+				"row": 4,
+				"prerequisites": ["Arcane Studies"],
+				"quote": "..."
+			},
+			{
+				"name": "Magic Specialization",
+				"row": 5,
+				"prerequisites": ["Arcane Studies"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Warding",
+				"row": 6,
+				"prerequisites": ["Magical Combat"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Chivalry",
+				"row": 7,
+				"prerequisites": ["Civil Service"],
+				"quote": "..."
+			},
+			{
+				"name": "Siege Tactics",
+				"row": 8,
+				"prerequisites": ["Physics", "Machinery"],
+				"quote": "..."
+			},
+			{
+				"name": "Alchemy",
+				"row": 9,
+				"prerequisites": ["Machinery", "Blast Furnace"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 9,
+		"era": "Arcane era",
+		"techCost": 1530,
+		"buildingCost": 300,
+		"wonderCost": 625,
+		"techs": [
+			{
+				"name": "Apothecaries",
+				"row": 3,
+				"prerequisites": ["Healing Arts", "Acoustics"],
+				"quote": "..."
+			},
+			{
+				"name": "Technomancy",
+				"row": 5,
+				"prerequisites": ["Acoustics", "Warding"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Economics",
+				"row": 7,
+				"prerequisites": ["Chivalry"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 10,
+		"era": "Technomancy era",
+		"techCost": 2200,
+		"buildingCost": 360,
+		"wonderCost": 730,
+		"techs": [
+			{
+				"name": "Archaeology",
+				"row": 2,
+				"prerequisites": ["Stellarography", "Scrying Technique", "Apothecaries"],
+				"quote": "..."
+			},
+			{
+				"name": "Arcane Architecture",
+				"row": 4,
+				"prerequisites": ["Technomancy"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Aether Engine",
+				"row": 6,
+				"prerequisites": ["Technomancy", "Economics"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Block Printing",
+				"row": 8,
+				"prerequisites": ["Siege Tactics", "Economics"],
+				"quote": "..."
+			},
+			{
+				"name": "Transmutation",
+				"row": 9,
+				"prerequisites": ["Alchemy", "Siege Tactics"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 11,
+		"era": "Technomancy era",
+		"techCost": 3100,
+		"buildingCost": 400,
+		"wonderCost": 820,
+		"techs": [
+			{
+				"name": "Biology",
+				"row": 2,
+				"prerequisites": ["Archaeology"],
+				"quote": "..."
+			},
+			{
+				"name": "Thaumaturgic Mastery",
+				"row": 3,
+				"prerequisites": ["Apothecaries", "Arcane Architecture"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Mana Conduits",
+				"row": 5,
+				"prerequisites": ["Aether Engine"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Astral Network",
+				"row": 6,
+				"prerequisites": ["Aether Engine"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Gears & Joints",
+				"row": 7,
+				"prerequisites": ["Block Printing"],
+				"quote": "..."
+			},
+			{
+				"name": "Firearms",
+				"row": 9,
+				"prerequisites": ["Transmutation"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 12,
+		"era": "Technomancy era",
+		"techCost": 4050,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Cryocraft",
+				"row": 2,
+				"prerequisites": ["Biology", "Thaumaturgic Mastery"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Technocracy",
+				"row": 4,
+				"prerequisites": ["Mana Conduits", "Thaumaturgic Mastery"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Levitation & Propulsion",
+				"row": 6,
+				"prerequisites": ["Astral Network", "Gears & Joints"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Automaton",
+				"row": 7,
+				"prerequisites": ["Astral Network", "Gears & Joints"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Military Science",
+				"row": 8,
+				"prerequisites": ["Block Printing", "Firearms"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 13,
+		"era": "Avionic era",
+		"techCost": 5100,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Panacea",
+				"row": 2,
+				"prerequisites": ["Cryocraft", "Technocracy"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Mana Battery",
+				"row": 4,
+				"prerequisites": ["Technocracy", "Levitation & Propulsion"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Pressurized Liftonium",
+				"row": 6,
+				"prerequisites": ["Levitation & Propulsion"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Sky Miners",
+				"row": 7,
+				"prerequisites": ["Levitation & Propulsion", "Automaton"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Railcars",
+				"row": 8,
+				"prerequisites": ["Automaton", "Military Science"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 14,
+		"era": "Avionic era",
+		"techCost": 6300,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Plastics",
+				"row": 3,
+				"prerequisites": ["Mana Battery"],
+				"quote": "..."
+			},
+			{
+				"name": "Airships",
+				"row": 4,
+				"prerequisites": ["Mana Battery", "Pressurized Liftonium"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Ballistics",
+				"row": 6,
+				"prerequisites": ["Pressurized Liftonium"],
+				"quote": "..."
+			},
+			{
+				"name": "Pyrokinetic Drive",
+				"row": 8,
+				"prerequisites": ["Railcars", "Sky Miners"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 15,
+		"era": "Avionic era",
+		"techCost": 7700,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Submersibles",
+				"row": 2,
+				"prerequisites": ["Panacea", "Plastics"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Runic Circuitry",
+				"row": 4,
+				"prerequisites": ["Airships"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Anti-Air Tactics",
+				"row": 6,
+				"prerequisites": ["Airships", "Ballistics"],
+				"quote": "..."
+			},
+			{
+				"name": "Standardized Modules",
+				"row": 8,
+				"prerequisites": ["Pyrokinetic Drive"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	
+	{
+		"columnNumber": 16,
+		"era": "Skybound era",
+		"techCost": 9800,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Calculator",
+				"row": 2,
+				"prerequisites": ["Submersibles", "Runic Circuitry"],
+				"quote": "..."
+			},
+			{
+				"name": "Manaflux Detector",
+				"row": 4,
+				"prerequisites": ["Runic Circuitry"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Destabilized Liftonium",
+				"row": 6,
+				"prerequisites": ["Anti-Air Tactics", "Standardized Modules"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Energized Liftonium",
+				"row": 8,
+				"prerequisites": ["Anti-Air Tactics", "Standardized Modules"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		
+		]
+	},
+	{
+		"columnNumber": 17,
+		"era": "Skybound era",
+		"techCost": 12500,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Synthetic Personality",
+				"row": 2,
+				"prerequisites": ["Calculator"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Guidance Systems",
+				"row": 4,
+				"prerequisites": ["Manaflux Detector", "Destabilized Liftonium"],
+				"quote": "..."
+			},
+			{
+				"name": "Material Fabrication",
+				"row": 6,
+				"prerequisites": ["Energized Liftonium"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Liftonium Weaponry",
+				"row": 8,
+				"prerequisites": ["Energized Liftonium"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		]
+	},
+	{
+		"columnNumber": 18,
+		"era": "Skybound era",
+		"techCost": 14000,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Advanced Automaton",
+				"row": 3,
+				"prerequisites": ["Synthetic Personality", "Guidance Systems"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Bionics",
+				"row": 5,
+				"prerequisites": ["Guidance Systems", "Material Fabrication"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Floating Fortress",
+				"row": 7,
+				"prerequisites": ["Material Fabrication", "Liftonium Weaponry"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		]
+	},
+	{
+		"columnNumber": 19,
+		"era": "Transcendence era",
+		"techCost": 18000,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Colossi Construct",
+				"row": 4,
+				"prerequisites": ["Bionics", "Advanced Automaton"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Reaching the Heaven",
+				"row": 6,
+				"prerequisites": ["Bionics", "Floating Fortress"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		]
+	},
+	{
+		"columnNumber": 20,
+		"era": "Transcendence era",
+		"techCost": 24000,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Omnifactory",
+				"row": 1,
+				"prerequisites": ["Colossi Construct"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Absolute Mana Comprehension",
+				"row": 3,
+				"prerequisites": ["Colossi Construct"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Chronomancy",
+				"row": 5,
+				"prerequisites": ["Colossi Construct", "Reaching the Heaven"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Precursor's Secrets",
+				"row": 7,
+				"prerequisites": ["Reaching the Heaven"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+			{
+				"name": "Orbital Ships",
+				"row": 9,
+				"prerequisites": ["Reaching the Heaven"],
+				"uniques": ["Magitech"],
+				"quote": "..."
+			},
+		]
+	},
+	{
+		"columnNumber": 21,
+		"era": "Transcendence era",
+		"techCost": 30000,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Apotheosis",
+				"row": 5,
+				"prerequisites": ["Absolute Mana Comprehension", "Chronomancy", "Precursor's Secrets"],
+				"uniques": ["Magitech", "Can be continually researched"],
+				"quote": "..."
+			},
+		]
+	},
+]

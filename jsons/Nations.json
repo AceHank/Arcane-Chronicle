@@ -1,0 +1,512 @@
+[
+    {
+		"name": "Adelle Corp",
+		"leaderName": "Kane",
+		"preferredVictoryType": "Domination",
+
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text.",
+		"declaringWar": "You stand in the way of my people. Let us solve this like warriors!",
+		"attacked": "You dare have the courage to challenge nod, but no fear, for I will sweep you out of history.",
+		"defeated": "You have the guts to call my body a corpse but beware, I know what will happen to our future- our tiberium future.",
+		"introduction": "If I am cut, Do I not bleed?",
+		"tradeRequest": "I am not always this generous, but we hope you take this rare opportunity we give you.",
+		"outerColor": [0,0,0],
+		"innerColor": [158,56,0],
+		"uniqueName": "Word of Nod",
+		"uniques": ["[+30]% Strength <vs [City-States]>", "[+2] Movement <for [Armored] units>"],
+		"cities": ["Ketilsstaoir","Frooaross","Hraun","Geirhildarvatn","Dumbshaf","Leioolfsstaoir","Hraunsass","Mosfell","Geirmundarstaoir","Holmgaror","Selaeyrr",
+"Horga","Fellshverfi","Kalfborgara","Reykir inir efri","Bolstaor","Beruvikrhraun","Berghylr","Rauosgil"]
+	},
+
+	{
+		"name": "The New Movement",
+		"leaderName": "Anton Slavik",
+		"preferredVictoryType": "Domination",
+
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text",
+		"declaringWar": "It is in  my Intentions to spread the word of Nod into your land.",
+		"attacked": "Pitiful fool! Now we shall destroy you!",
+		"defeated": "I see for the black hand has been unworthy to serve Kane.",
+		"introduction": "If you would stay out of our way then you might live to tell your tale.",
+		"tradeRequest": "I would be grateful if you agreed on the following proposal.",
+		"outerColor": [162,51,0],
+		"innerColor": [0,0,0],
+		"uniqueName": "Purification",
+		"uniques": ["No damage penalty for wounded units <for [non-air] units>"],
+		"cities": ["Ketilsstaoir","Frooaross","Hraun","Geirhildarvatn","Dumbshaf","Leioolfsstaoir","Hraunsass","Mosfell","Geirmundarstaoir","Holmgaror","Selaeyrr",
+"Horga","Fellshverfi","Kalfborgara","Reykir inir efri","Bolstaor","Beruvikrhraun","Berghylr","Rauosgil"]
+	},
+	
+	{
+		"name": "The Mock",
+		"leaderName": "Anton Slavik",
+		"preferredVictoryType": "Domination",
+
+		"startIntroPart1": "Sample text.",
+		"startIntroPart2": "Sample text",
+		"declaringWar": "It is in  my Intentions to spread the word of Nod into your land.",
+		"attacked": "Pitiful fool! Now we shall destroy you!",
+		"defeated": "I see for the black hand has been unworthy to serve Kane.",
+		"introduction": "If you would stay out of our way then you might live to tell your tale.",
+		"tradeRequest": "I would be grateful if you agreed on the following proposal.",
+		"outerColor": [91,37,82],
+		"innerColor": [202,107,60],
+		"uniqueName": "Purification",
+		"uniques": ["No damage penalty for wounded units <for [non-air] units>"],
+		"cities": ["Ketilsstaoir","Frooaross","Hraun","Geirhildarvatn","Dumbshaf","Leioolfsstaoir","Hraunsass","Mosfell","Geirmundarstaoir","Holmgaror","Selaeyrr",
+"Horga","Fellshverfi","Kalfborgara","Reykir inir efri","Bolstaor","Beruvikrhraun","Berghylr","Rauosgil"]
+	},
+	{
+		"name": "Spectator",
+		"outerColor": [255,255,255],
+//		"innerColor": [255,255,255]
+	},
+	
+	
+	// City-States
+	
+	// Agricultural
+	{
+		"name": "Andini",
+		"adjective": ["Undines"],
+		"cityStateType": "Agrarian",
+		"style": "Undine",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "We will mobilize every means of resistance to stop this transgression against our people!",
+		"defeated": "We were too weak to protect ourselves...",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [ 51,202,  0],
+		"cities": ["Andini"]
+	},
+	{
+		"name": "Ashua",
+		"adjective": ["Ashuan"],
+		"cityStateType": "Food Exporter",
+		"style": "Halfling",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "If you need your nose bloodied, we'll happily serve.",
+		"defeated": "I have failed. May you, at least, know compassion towards our people.",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [  0,255,128],
+		"cities": ["Ashua"]
+	},
+	{
+		"name": "Irgask",
+		"adjective": ["Irigaski"],
+		"cityStateType": "Food Exporter",
+		"style": "Goblin",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "If you need your nose bloodied, we'll happily serve.",
+		"defeated": "We... defeated? No... we had so much work to do!",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [  0,255,128],
+		"cities": ["Irgask"]
+	},
+	{
+		"name": "Khemul",
+		"adjective": ["Khemuli"],
+		"cityStateType": "Agrarian",
+		"style": "Glomon",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "We will mobilize every means of resistance to stop this transgression against our people!",
+		"defeated": "What a fine battle! Khemul is willing to serve you!",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [ 51,202,  0],
+		"cities": ["Khemul"]
+	},
+	{
+		"name": "Panema",
+		"adjective": ["Panemian"],
+		"cityStateType": "Abundance",
+		"style": "Kunakad",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "You will see you have just bitten off more than you can chew.",
+		"defeated": "They will write songs of this.... pray that they shall be in your favor.",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [ 10,162, 60],
+		"cities": ["Panema"]
+	},
+	{
+		"name": "Tonthon",
+		"adjective": ["Tontoni"],
+		"cityStateType": "Abundance",
+		"style": "Myconids",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "You will see you have just bitten off more than you can chew.",
+		"defeated": "The dark guerilla will never stop haunting you!",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [ 10,162, 60],
+		"cities": ["Tonthon"]
+	},
+	
+	// Cultural
+	{
+		"name": "Artiza",
+		"adjective": ["Artizan"],
+		"cityStateType": "Cultured",
+		"style": "Kunakad",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "You shall stain this land no longer with your vileness! To arms, my countrymen - we ride to war!",
+		"attacked": "You can see how fruitless this will be for you... right?",
+		"defeated": "Perhaps now we will find peace in death...",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [255, 97,255],
+		"cities": ["Artiza"]
+	},
+	{
+		"name": "Landoruel",
+		"adjective": ["Aureli"],
+		"cityStateType": "Oral Tradition",
+		"style": "Elves",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "You shall stain this land no longer with your vileness! To arms, my countrymen - we ride to war!",
+		"attacked": "We are no strangers to war. You have strayed from the right path, and now we will correct it.",
+		"defeated": "The day of judgement has come to us. But rest assured, the same will go for you!",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [152,  0,241],
+		"cities": ["Landoruel"]
+	},
+	{
+		"name": "Manthrill",
+		"adjective": ["Manthili"],
+		"cityStateType": "Ceremonial",
+		"style": "Dwarves",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "You shall stain this land no longer with your vileness! To arms, my countrymen - we ride to war!",
+		"attacked": "Oh, truly you are as cruel as your nicknaame.",
+		"defeated": "You fiend! History shall remember this!",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [194, 97,255],
+		"cities": ["Manthrill"]
+	},
+	{
+		"name": "Pid",
+		"adjective": ["Pidian"],
+		"cityStateType": "Cultured",
+		"style": "Demonic",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "You shall stain this land no longer with your vileness! To arms, my countrymen - we ride to war!",
+		"attacked": "You can see how fruitless this will be for you... right?",
+		"defeated": "The principles for which we have fought will survive longer than any nation you could ever build.",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [255, 97,255],
+		"cities": ["Pid"]
+	},
+	{
+		"name": "Silvermane",
+		"adjective": ["Silvari"],
+		"cityStateType": "Oral Tradition",
+		"style": "Vaja",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "You shall stain this land no longer with your vileness! To arms, my countrymen - we ride to war!",
+		"attacked": "We are no strangers to war. You have strayed from the right path, and now we will correct it.",
+		"defeated": "How barbaric. Those who live by the sword shall perish by the sword.",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [152,  0,241],
+		"cities": ["Silvermane"]
+	},
+	{
+		"name": "Windemer",
+		"adjective": ["Windari"],
+		"cityStateType": "Ceremonial",
+		"style": "High Elves",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "You shall stain this land no longer with your vileness! To arms, my countrymen - we ride to war!",
+		"attacked": "Oh, truly you are as cruel as your nicknaame.",
+		"defeated": "And so the flower of Windemer falls to barbaric hands...",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [194, 97,255],
+		"cities": ["Manthrill"]
+	},
+	
+	// Industrial
+	{
+		"name": "Canthyria",
+		"adjective": ["Cantirii"],
+		"cityStateType": "Momentum Progression",
+		"style": "Centaurs",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "I have to do this, for the sake of progress if nothing else. You must be opposed!",
+		"attacked": "A barbarian like you will never enough with just a horse. I am not a horse!",
+		"defeated": "I don't like you, not from the beginning.",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [150, 87, 42],
+		"cities": ["Canthyria"]
+	},
+	{
+		"name": "Clockwerk",
+		"adjective": ["Clockwerks"],
+		"cityStateType": "Artisan",
+		"style": "Kunakad",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "I have to do this, for the sake of progress if nothing else. You must be opposed!",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "Today, the Clockwerks obey you, but do not think this is over...",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [239,169,119],
+		"cities": ["Clockwerk"]
+	},
+	{
+		"name": "Dayne",
+		"adjective": ["Clockwerks"],
+		"cityStateType": "Industrial",
+		"style": "Vaja",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "I have to do this, for the sake of progress if nothing else. You must be opposed!",
+		"attacked": "Just because you can't pay me, you declare war on me?",
+		"defeated": "Just take all my slave, will you?",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [189, 99,  0],
+		"cities": ["Dayne"]
+	},
+	{
+		"name": "Dunfirr",
+		"adjective": ["Dunfiri"],
+		"cityStateType": "Artisan",
+		"style": "Dwarves",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "I have to do this, for the sake of progress if nothing else. You must be opposed!",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "The great things we'll about to create are gone.",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [239,169,119],
+		"cities": ["Dunfirr"]
+	},
+	{
+		"name": "Kov",
+		"adjective": ["Kovs"],
+		"cityStateType": "Momentum Progression",
+		"style": "Kobolds",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "I have to do this, for the sake of progress if nothing else. You must be opposed!",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "So what is the meaning of a miner?",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [150, 87, 42],
+		"cities": ["Kov"]
+	},
+	{
+		"name": "Rog",
+		"adjective": ["Rogs"],
+		"cityStateType": "Industrial",
+		"style": "Ogre",
+		//"startBias": ["Coast"],
+
+		"declaringWar": "Hungry ... hungry for eternity ...",
+		"attacked": "What a coincidence, I yearns for a fresh flesh myself!",
+		"defeated": "Least spare me your leftover meat.",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [189, 99,  0],
+		"cities": ["Rog"]
+	},
+	
+	// Mercantile
+	{
+		"name": "Angasin",
+		"adjective": ["Angan"],
+		"cityStateType": "Gilded Vault",
+		"style": "Gnomes",
+
+		"declaringWar": "You have revealed your purposes a bit too early, my friend...",
+		"attacked": "Traitorous man! I will not stand for such wanton abuse and slander - I shall have your head!",
+		"defeated": "Perhaps, in another world, we could have been friends...",
+		"outerColor": [  0,  0, 0],
+		"innerColor": [235,215,55],
+		"cities": ["Angasin"]
+	},
+	{
+		"name": "Concordia",
+		"adjective": ["Cordian"],
+		"cityStateType": "Cordian Trading",
+		"style": "Glomon",
+		"startBias": ["Coast"],
+
+		"declaringWar": "You have revealed your purposes a bit too early, my friend...",
+		"attacked": "Traitorous man! I will not stand for such wanton abuse and slander - I shall have your head!",
+		"defeated": "A wrong calculation, on my part.",
+		"outerColor": [  0,  0, 0],
+		"innerColor": [255,255, 0],
+		"cities": ["Concordia"]
+	},
+	{
+		"name": "Crotoa",
+		"adjective": ["Crotoan"],
+		"cityStateType": "Middleman Group",
+		"style": "Beastkin",
+		"startBias": ["Coast"],
+
+		"declaringWar": "You have revealed your purposes a bit too early, my friend...",
+		"attacked": "Traitorous man! I will not stand for such wanton abuse and slander - I shall have your head!",
+		"defeated": "We never fully trusted you from the start.",
+		"outerColor": [  0,  0, 0],
+		"innerColor": [211,205,51],
+		"cities": ["Crotoa"]
+	},
+	{
+		"name": "Frostwaste",
+		"adjective": ["Frozen"],
+		"cityStateType": "Icypath Kongsi",
+		"style": "Icemen",
+		"startBias": ["Tundra","Snow"],
+		
+		"declaringWar": "You have revealed your purposes a bit too early, my friend...",
+		"attacked": "Traitorous man! I will not stand for such wanton abuse and slander - I shall have your head!",
+		"defeated": "May the Heavens forgive you for inflicting this humiliation to our people.",
+		"outerColor": [  0,  0, 0],
+		"innerColor": [211,220,93],
+		"cities": ["Frostwaste"]
+	},
+	{
+		"name": "Gahaldur",
+		"adjective": ["Gadari"],
+		"cityStateType": "Smithy Guild",
+		"style": "Dwarves",
+		"startBias": ["Hill"],
+
+		"declaringWar": "You have revealed your purposes a bit too early, my friend...",
+		"attacked": "Traitorous man! I will not stand for such wanton abuse and slander - I shall have your head!",
+		"defeated": "How could we fall to the likes of you?!",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [255,255,100],
+		"cities": ["Gahaldur"]
+	},
+	{
+		"name": "Shaquad",
+		"adjective": ["Shaquadian"],
+		"cityStateType": "Unciv Megacorp",
+		"style": "Vaja",
+		"startBias": ["Coast"],
+
+		"declaringWar": "You have revealed your purposes a bit too early, my friend...",
+		"attacked": "Traitorous man! I will not stand for such wanton abuse and slander - I shall have your head!",
+		"defeated": "I guess you weren't here for the sprouts after all...",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [200,255, 50],
+		"cities": ["Shaquad"]
+	},
+	
+	// Militaristic
+	{
+		"name": "Aerithalas",
+		"adjective": ["Aeripii"],
+		"cityStateType": "Aerithalas Mercenary",
+		"style": "Harpy",
+		"startBias": ["Hill"],
+
+		"declaringWar": "War lingers in our hearts. Why carry on with a false peace?",
+		"attacked": "You gormless radger! You'll dine on your own teeth before you set foot in Aerithalas!",
+		"defeated": "A lonely wind blows through the highlands today. A dirge for Aerithalas. Can you hear it?",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [255, 50, 50],
+		"cities": ["Aerithalas"]
+	},
+	{
+		"name": "Corelia",
+		"adjective": ["Pirates"],
+		"cityStateType": "Pirates of Corelia",
+		"style": "Vaja",
+		"startBias": ["Coast"],
+		
+		"declaringWar": "Let's have a nice little War, shall we?",
+		"attacked": "Damn you, I will not fall.",
+		"defeated": "This ship may sink, but our spirits will linger.",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [230, 69, 96],
+		"cities": ["Corelia"]
+	},
+	{
+		"name": "Gildar",
+		"adjective": ["Gildari"],
+		"cityStateType": "Gildar Mercenary",
+		"style": "Drow",
+		
+		"declaringWar": "We have wanted this for a LONG time. War it shall be.",
+		"attacked": "So you have chosen death.",
+		"defeated": "Congratulations, conqueror. This tribe serves you now.",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [255, 50, 50],
+		"cities": ["Gildar"]
+	},
+	{
+		"name": "Grokzut",
+		"adjective": ["Groggs"],
+		"cityStateType": "Amphibious Ruler",
+		"style": "Lizardfolk",
+
+		"declaringWar": "Itz time! Itz time to WAAAGH diz pathetic weaklingz!",
+		"attacked": "HAHAHAHA! Diz iz juzt hilarious! Get em, boiz!",
+		"defeated": "Gahh... I hate when diz happenz...",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [200,  0, 76],
+		"cities": ["Grokzut"]
+	},
+	{
+		"name": "Tuskarok",
+		"adjective": ["Tuskari"],
+		"cityStateType": "Fjord Ruler",
+		"style": "Tuskari",
+		"startBias": ["Coast"],
+
+		"declaringWar": "I will enjoy hearing your last breath as you witness the destruction of your realm!",
+		"attacked": "Very well, we will kick you back to the Dark Age!",
+		"defeated": "What treachery has struck us? No, what evil?",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [200,  0, 76],
+		"cities": ["Tuskarok"]
+	},
+	{
+		"name": "Rackedt",
+		"adjective": ["Rackadine"],
+		"cityStateType": "Way of the Rackadine",
+		"style": "Beastkin",
+
+		"declaringWar": "We don't like your face. To arms!",
+		"attacked": "So this is it. You've lost your senses!",
+		"defeated": "Vile ruler, know that you 'won' this war in name only!",
+		"outerColor": [  0,  0,  0],
+		"innerColor": [230, 69, 96],
+		"cities": ["Rackedt"]
+	},
+
+	
+	//Barbarian
+	{
+		"name": "Barbarians",
+		"outerColor": [0,0,0],
+        "innerColor": [185,12,12],
+		"uniques": [
+			"Can only heal by pillaging",
+			"[Slime] units gain the [No Suicide] promotion",
+			//"[+25]% Strength <for [All] units>",
+			"[+15]% Strength <within [2] tiles of a [Barbarian encampment]>",
+			"[+10]% Strength <in [Barbarian encampment] tiles>",
+			
+			"Free [Giant Rat-2] appears <upon gaining a [Giant Rat] unit>",
+		]
+	}
+]

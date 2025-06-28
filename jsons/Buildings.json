@@ -1,0 +1,624 @@
+[
+	//TEMPLATE
+	/*
+	{
+		"name": "",
+		"cost": ,
+		"science": ,
+		"culture": ,
+		"gold": ,
+		"faith": ,
+		"food": ,
+		"production": ,
+		"greatPersonPoints": {"": },
+		"specialistSlots": {"": },
+		"maintenance": ,
+		"isWonder": ,
+		"isNationalWonder": ,
+		"requiredBuilding": "",
+		"requiredTech": "",
+		"requiredResource": "",
+		"requiredNearbyImprovedResources": [""],
+		"hurryCostModifier": ,
+		"uniques": [""],
+		"replacementTextForUniques": "",
+		"quote": "",
+		"civilopediaText": [
+			{"text": ""}
+		]
+	},
+	*/
+	//Arrival Era
+
+	// Always available
+	{
+		"name": "Palace",
+		"isNationalWonder": true,
+		"production": 3,
+		"science": 3,
+		"gold": 3,
+		"culture": 1,
+		"cityStrength": 2,
+		"cost": 1,
+		"uniques": ["Indicates the capital city"]
+	},
+	{
+		"name": "Monument",
+		"culture": 2,
+		"cost": 40,
+		"hurryCostModifier": 40,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured", "Reveals the entire map", "Automatically built in all cities where it is buildable"]
+	},
+	
+	// Column 1
+	{
+		"name": "Granary",
+		"food": 2,
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["[+1 Food] from [Deer] tiles [in this city]",
+			"[+1 Food] from [Bananas] tiles [in this city]",
+			"[+1 Food] from [Wheat] tiles [in this city]"],
+		"requiredTech": "Agriculture"
+	},
+	{
+		"name": "Shrine",	//TODO: Great Prophet/Great Apostle point
+		"faith": 1,
+		"cost": 40,
+		"greatPersonPoints": {"Great Prophet": 2},
+		"maintenance": 1,
+		"requiredTech": "Mysticism",
+		"uniques": ["Only available <when religion is enabled>"]
+	},
+	
+	// Column 2
+	{
+		"name": "Library",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["[+1 Science] per [2] population [in this city]"],
+		"requiredTech": "Writing"
+	},
+	{
+		"name": "Magician Enclave",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredTech": "Thaumaturgy",
+		"uniques": ["Provides [1] [Magician]",
+		
+					"[+1 Science] <while researching [Magitech]>",
+					],
+	}
+	{
+		"name": "Stable",
+		"maintenance": 1,
+		"requiredNearbyImprovedResources": ["Horses","Sheep","Cattle"],
+		"hurryCostModifier": 25,
+		"uniques": ["[+15]% Production when constructing [Mounted] units [in this city]",
+			"[+1 Production] from [Cattle] tiles [in this city]",
+			"[+1 Production] from [Horses] tiles [in this city]",
+			"[+1 Production] from [Sheep] tiles [in this city]"],
+		"requiredTech": "Domestication"
+	},
+	{
+		"name": "Circus",
+		"requiredNearbyImprovedResources": ["Ivory","Horses"],
+		"happiness": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Domestication"
+	},
+	{
+		"name": "Lighthouse",
+		"cost": 75,
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["Must be next to [Coast]", "[+1 Food] from [Ocean] tiles [in this city]",
+			"[+1 Food] from [Coast] tiles [in this city]", "[+1 Food] from [Fish] tiles [in this city]" ],
+		"requiredTech": "Sea Fishing"
+	},
+	
+	//Column 3
+	{
+		"name": "Water Mill",
+		"maintenance": 2,
+		"food": 2,
+		"production": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["Must be on [River]"],
+		"requiredTech": "Hydrology"
+	},
+	{
+		"name": "Walls",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"cost": 75,
+		"hurryCostModifier": 25,
+		"requiredTech": "Masonry",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Barracks",		//TODO: Great General GPP, or Commander specialist
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["All newly-trained [Military] units [in this city] receive the [Trained I] promotion", "Destroyed when the city is captured"],
+		"requiredTech": "Bronze Working"
+	},
+	{
+		"name": "Amphitheater",
+		"culture": 3,
+		"specialistSlots": {"Artist": 1},
+		"requiredBuilding": "Monument",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Theology"
+	},
+	{
+		"name": "Arena",
+		"maintenance": 1,
+		"happiness": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Mounted Warfare"
+	},
+	
+	//Column 4
+	{
+		"name": "Harbor",
+		"cost": 120,
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": ["[+1 Production] from [Luxury resource] tiles [in this city] <in [Water] tiles>"
+					"[+1 Gold] from [Water resource] tiles [in this city]",
+					"Connects trade routes over water","Must be next to [Coast]"],
+		"requiredTech": "Star Charts"
+	},
+	{
+		"name": "Temple",	//TODO: Great Prophet/Apostle point
+		"faith": 2,
+		"requiredBuilding": "Shrine",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Theology",
+		"uniques": ["Only available <when religion is enabled>", "Destroyed when the city is captured"]
+	},
+	{
+		"name": "Market",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"gold": 25},
+		"requiredTech": "Coinage"
+	},
+	{
+		"name": "Mint",
+		"maintenance": 0,
+		"requiredNearbyImprovedResources": ["Gold Ore", "Silver"],
+		"hurryCostModifier": 25,
+		"uniques": ["[+2 Gold] from [Gold Ore] tiles [in this city]", "[+2 Gold] from [Silver] tiles [in this city]"],
+		"requiredTech": "Coinage"
+	},
+	{
+		"name": "Workshop",
+		"maintenance": 2,
+		"production": 1,
+		"specialistSlots": {"Engineer": 1},
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"production": 10},
+		"requiredTech": "Craftmanship"
+	},
+	{
+		"name": "Mana Artificer",
+		"maintenance": 1,
+		"science": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["Consumes [1] [Magician]", "Provides [3] [Manarium]"],
+		"requiredTech": "Mana Crystallization"
+	},
+	
+	//Column 5
+	{
+		"name": "University",
+		"maintenance": 2,
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"science": 33},
+		"specialistSlots": {"Scientist": 2},
+		"requiredBuilding": "Library",
+		"uniques": ["[+2 Science] from [Jungle] tiles [in this city]"],
+		"requiredTech": "Education"
+	},
+	{
+		"name": "City Hall",					//TODO: Governor specialist
+		"science": 1,
+		"culture": 1,
+		"gold": 1,
+		"faith": 1,
+	//	"specialistSlots": {"Governor": },
+		"maintenance": 1,
+		"requiredTech": "State Workforce",
+		"hurryCostModifier": 15,
+	//	"uniques": [""],
+		"replacementTextForUniques": "",
+	},
+	{
+		"name": "Courthouse",
+		"maintenance": 4,
+		"hurryCostModifier": 50,
+		"uniques": ["Remove extra unhappiness from annexed cities",
+			"Can only be built <in [Annexed] cities>"],
+		"requiredTech": "State Workforce"
+	},
+	{
+		"name": "Aqueduct",	//TODO: Can also reduce food carryover into +Food from Plantation?
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": ["[20]% Food is carried over after population increases [in this city]", "[+1 Food] from [Farm] tiles [in this city] <with [1] to [6] neighboring [City center] tiles> <hidden from users>",
+					"+1 [Food] from [Farm] tiles adjacent to this city"],
+		"requiredTech": "Engineering"
+	},
+	
+	//Column 6
+	{
+		"name": "Shipyard",					//TODO: Great Admiral GPP, or Commodore specialist
+		"hurryCostModifier": 25,
+		"maintenance": 2,
+		"production": 1,
+		"requiredBuilding": "Harbor",
+		"uniques": ["[+1 Production] from [Water resource] tiles [in this city]",
+			"Must be next to [Coast]", "[+10]% Production when constructing [Water] units [in this city]"],
+		"requiredTech": "Dry Docks"
+	},
+	{
+		"name": "Garden",
+		"uniques": ["[+25]% Great Person generation [in this city]", "Must be next to [Fresh water]"],
+		"hurryCostModifier": 35,
+		"food": 2,
+		"maintenance": 1,
+		"requiredTech": "Civil Service",
+		"civilopediaText": [
+			{"text": "An area where plants are cultivated."}
+		]
+	},
+	{
+		"name": "Windmill",
+		"specialistSlots": {"Engineer": 1},
+		"production": 2,
+		"hurryCostModifier": 25,
+		"maintenance": 2,
+		"uniques": ["Must not be on [Hill]", "[+1 Food] from [Farm] tiles [in this city] <in [non-[Fresh Water]] tiles>"],
+		"requiredTech": "Civil Service"
+	},
+	{
+		"name": "Public Bath",
+		"maintenance": 1,
+		"happiness": 2,
+		"requiredBuilding": "Arena",
+		"hurryCostModifier": 25,
+		"requiredTech": "Civil Service"
+	},
+	{
+		"name": "Runeforge",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"culture": 1,
+		"requiredTech": "Runeforging",
+		"requiredResource": "Manarium",
+		"uniques": ["Consumes [1] [Magician]",
+					"All newly-trained [Military] units [in this city] receive the [Rune Enchanted] promotion", 
+					"[+1 Production] from [Manarium] tiles [in this city]",
+					"Destroyed when the city is captured"],
+		"civilopediaText": [
+			{"text": "..."}
+		]
+	},
+	
+	//Column 7
+	{
+		"name": "Monastery",
+		"faith": 3,
+		"requiredTech": "Healing Arts",
+		"requiredBuilding": "Temple",
+		"uniques": ["[-10]% Unhappiness from [Population] [in this city]",
+			"Only available <when religion is enabled>", "Destroyed when the city is captured"]
+	},
+	{
+		"name": "Magic Academy",						//TODO: +Culture, +Science from Leyline
+		"maintenance": 3,
+		"hurryCostModifier": 15,
+		"science": 2,
+	//	"specialistSlots": {"Scientist": 2},
+		"requiredBuilding": "Magician Enclave",
+		"uniques": ["Provides [1] [Magician]", "+1 [Science], +1 [Gold] from Leyline in this city"],
+		"requiredTech": "Arcane Studies"
+	},
+	{
+		"name": "Forge",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"requiredNearbyImprovedResources": ["Iron"],
+		"requiredTech": "Blast Furnace",
+		"uniques": ["[+15]% Production when constructing [Land] units [in this city]",
+			"[+1 Production] from [Iron] tiles [in this city]"]
+	},
+	{
+		"name": "Armory",								//TODO: Great General GPP, or Commander specialist
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredBuilding": "Barracks",
+		"uniques": ["All newly-trained [Military] units [in this city] receive the [Trained II] promotion", "Destroyed when the city is captured"],
+		"requiredTech": "Blast Furnace"
+	},
+	
+	//Column 8
+	{
+		"name": "Seaport",								//TODO: Great Admiral GPP, or Commodore specialist
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"gold": 2,
+		"requiredBuilding": "Harbor",
+		"uniques": ["[+1 Gold] from [Luxury resource] tiles [in this city]",
+			"Must be next to [Coast]", "[+10]% Production when constructing [Water] units [in this city]"],
+		"requiredTech": "Stellarography"
+	},
+	{
+		"name": "Observatory",
+		"maintenance": 1,
+		"hurryCostModifier": 15,
+		"requiredBuilding": "Library",
+		"uniques": ["Must be next to [Mountain]", "[+50]% [Science] [in this city]"],
+		"requiredTech": "Stellarography"
+	},
+	{
+		"name": "Watchtower",		//TODO: Do Watcher, 6 unobstructed true sight
+		"maintenance": 0,
+		"hurryCostModifier": 15,
+		"uniques": ["Must be on [Hill]", "Free Watcher for free"],
+		"requiredTech": "Scrying Technique"
+	},
+	{
+		"name": "Opera House",
+		"culture": 4,
+		"specialistSlots": {"Artist": 1},
+		"hurryCostModifier": 10,
+		"requiredBuilding": "Amphitheater",
+		"maintenance": 2,
+		"requiredTech": "Acoustics",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Pyromancy Tower",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Magic Specialization",
+		"requiredBuilding": "Magic Academy",
+		"uniques": ["All newly-trained [Ranged Mage] units [in this city] receive the [Pyromancy I] promotion", "Comment [Mutually exclusive with other Element Tower buildings]",
+					"Only available <in cities without a [Hydromancy Tower]> <in cities without a [Aeromancy Tower]> <in cities without a [Geomancy Tower]> <hidden from users>",
+					"Destroyed when the city is captured"],
+	},
+	{
+		"name": "Hydromancy Tower",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Magic Specialization",
+		"requiredBuilding": "Magic Academy",
+		"uniques": ["All newly-trained [Ranged Mage] units [in this city] receive the [Hydromancy I] promotion", "Comment [Mutually exclusive with other Element Tower buildings]",
+					"Only available <in cities without a [Pyromancy Tower]> <in cities without a [Aeromancy Tower]> <in cities without a [Geomancy Tower]> <hidden from users>",
+					"Destroyed when the city is captured"],
+	},
+	{
+		"name": "Aeromancy Tower",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Magic Specialization",
+		"requiredBuilding": "Magic Academy",
+		"uniques": ["All newly-trained [Ranged Mage] units [in this city] receive the [Aeromancy I] promotion", "Comment [Mutually exclusive with other Element Tower buildings]",
+					"Only available <in cities without a [Pyromancy Tower]> <in cities without a [Hydromancy Tower]> <in cities without a [Geomancy Tower]> <hidden from users>",
+					"Destroyed when the city is captured"],
+	},
+	{
+		"name": "Geomancy Tower",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Magic Specialization",
+		"requiredBuilding": "Magic Academy",
+		"uniques": ["All newly-trained [Ranged Mage] units [in this city] receive the [Geomancy I] promotion", "Comment [Mutually exclusive with other Element Tower buildings]",
+					"Only available <in cities without a [Pyromancy Tower]> <in cities without a [Hydromancy Tower]> <in cities without a [Aeromancy Tower]> <hidden from users>",
+					"Destroyed when the city is captured"],
+	},
+	
+	{
+		"name": "Large-Scale Barrier",		//TODO: how to make it possible +STR defending vs Spell for this city only
+		"cityHealth": 150,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Walls",
+		"requiredTech": "Warding",
+		"uniques": ["Destroyed when the city is captured"],
+		"civilopediaText": [
+			{"text": "A large-scale counter-magic to protect the city from magical attack."}
+		]
+	},
+	{
+		"name": "Castle",
+		"cityStrength": 7,
+		"cityHealth": 25,
+		"cost": 225,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Walls",
+		"requiredTech": "Chivalry",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	
+	//Column 9
+	{
+		"name": "Apothecary",
+		"maintenance": 1,
+		"science": 2,
+		"greatPersonPoints": {"Great Scientist": 1},
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Garden",
+		"requiredTech": "Apothecaries",
+		"uniques": ["[non-[Mechanical]] Units adjacent to this city heal [15] HP per turn when healing"],
+	}
+	{
+		"name": "Public School",
+		"science": 3,
+		"specialistSlots": {"Scientist": 1},
+		"requiredBuilding": "University",
+		"maintenance": 3,
+		"hurryCostModifier": 0,
+		"uniques": ["[+1 Science] per [2] population [in this city]"],
+		"requiredTech": "Technomancy"
+	},
+	{
+		"name": "Bank",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 15,
+		"uniques": ["[+25]% [Gold] [in this city]"],
+		"requiredBuilding": "Market",
+		"requiredTech": "Economics"
+	},
+	
+	//Column 10
+	{
+		"name": "Museum",
+		"culture": 4,
+		"specialistSlots": {"Artist": 2},
+		"requiredBuilding": "Opera House",
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"requiredTech": "Archaeology",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Stronghold",
+		"cityStrength": 9,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Castle",
+		"requiredTech": "Arcane Architecture",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Arcane Factory",
+		"cost": 440,
+		"production": 3,
+		"specialistSlots": {"Engineer": 1},
+		"requiredBuilding": "Workshop",
+		"requiredResource": "Manarium",
+		"requiredTech": "Aether Engine",
+		"maintenance": 3,
+		"hurryCostModifier": 0,
+		"uniques": ["[+15]% [Production] [in this city]"],
+		"civilopediaText": [
+			{"text": "Magic powered factory to build stuff that is more efficient than the small workshops."}
+		]
+	},
+	{
+		"name": "Printing House",
+		"specialistSlots": {"Artist": 2},
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"requiredBuilding": "Bank",
+		"requiredTech": "Block Printing",
+		"uniques": ["[+1 Culture, +1 Gold] from every [Artist] <in this city>", "Limited to [4] per Civilization", "Destroyed when the city is captured"]
+	},
+	{
+		"name": "Theatre",
+		"happiness": 3,
+		"hurryCostModifier": 10,
+		"maintenance": 2,
+		"requiredBuilding": "Public Bath",
+		"requiredTech": "Block Printing",
+		"civilopediaText": [
+			{"text": "A live collaborative performing art to present of an actual or artificial event in front of a live audience."}
+		]
+	},
+	
+	//Column 11
+	{
+		"name": "Aquarium",				//TODO: Also add +1 Science from Reef
+		"maintenance": 3,
+		"happiness": 3,
+		"hurryCostModifier": 0,
+		"uniques": ["[+1 Science] from [Water resource] tiles [in this city] <in [Coast] tiles>", "Must be next to [Coast]"],
+		"requiredTech": "Biology"
+	},
+	{
+		"name": "Mana Harvester",
+		"cost": 350,
+		"production": 2,
+		"science": 1,
+		"specialistSlots": {"Engineer": 1, "Scientist": 1},
+		"requiredBuilding": "Magic Academy",
+		"requiredNearbyImprovedResources": ["Leyline"],
+		"requiredTech": "Mana Conduits",
+		"maintenance": 3,
+		"hurryCostModifier": 0,
+		"uniques": ["Consumes [1] [Magician]", "Provides [3] [Manarium]", "[+5]% [Production] from every [Leyline] <in this city>"],
+		"civilopediaText": [
+			{"text": "A facility to harvest the abundant mana in a Leyline to be used in numerous applications."}
+		]
+	},
+	{
+		"name": "Astral Communicator",				//TODO: Bonus to Governor specialists
+		"requiredBuilding": "Public School",
+		"maintenance": 1,
+		"uniques": ["Bonus to Governor"],
+		"requiredTech": "Astral Network",
+		"civilopediaText": [
+			{"text": "A sophisticated system used to send and receive information from miles along."}
+		]
+	},
+	
+	//Column 12
+	{
+		"name": "War Academy",						//TODO: Great General GPP, or Commander specialist
+		"hurryCostModifier": 0,
+		"maintenance": 1,
+		"requiredBuilding": "Armory",
+		"uniques": ["All newly-trained [Military] units [in this city] receive the [Trained III] promotion", "Destroyed when the city is captured"],
+		"requiredTech": "Military Science"
+	},
+
+	// All Eras
+
+	{
+		"name": "Utopia Project",
+		"cost": 1500,
+		"isNationalWonder": true,
+		"uniques": ["Unavailable <when number of [Completed Policy branches] is less than [5]>", "Triggers a global alert upon build start",
+			"Triggers a Cultural Victory upon completion", "Only available <when [Cultural] Victory is enabled>", "Cannot be hurried"]
+	},
+
+	// Religious buildings
+
+	{
+		"name": "Cathedral",
+		"cost": 0,
+		"faith": 1,
+		"culture": 3,
+		"happiness": 1,
+		"specialistSlots": {"Artist": 1},
+		"uniques": ["Unbuildable", "Only available <when religion is enabled>"]
+	},
+	{
+		"name": "Mosque",
+		"cost": 0,
+		"culture": 2,
+		"faith": 3,
+		"happiness": 1,
+		"uniques": ["Unbuildable", "Only available <when religion is enabled>"]
+	},
+	{
+		"name": "Pagoda",
+		"cost": 0,
+		"culture": 2,
+		"faith": 2,
+		"happiness": 2,
+		"uniques": ["Unbuildable", "Only available <when religion is enabled>"]
+	},
+	
+	//Backend Buildings
+	
+]
